@@ -93,8 +93,7 @@ $ Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \tim
 </ul>
 
 <center>
-
-![Face Verification Flow Chart](./plots/face_verification.png)
+<img src="./plots/face_verification.png"  alt="Face Verification Flow Chart" width = 600px height = 300px >
 
 </center>
 
