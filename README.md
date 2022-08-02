@@ -1,6 +1,6 @@
 # Face Recognition with Face Classification and Verification
 
-# Face Detection with HAAR Features
+## Face Detection with HAAR Features
 
 <table>
   <tr>
@@ -20,17 +20,17 @@
   </tr>
 </table>
 
-# Face Classification
+## Face Classification
 
 <ul>
-  <li>Network:
+  <li><strong>Network:</strong>
     <ul>
       <li>Gray + ResNet-18</li>
       <li>RGB + ResNet-18</li>
       <li>RGB + ResNet-50</li>
     </ul>
   </li>
-  <li>Loss Function:
+  <li><strong>Loss Function:</strong>
     <ul>
       <li>ArcFace</li>
     </ul>
@@ -38,9 +38,10 @@
 </ul>
 
 <ul>
-  <li>Hyper-Parameters:
+  <li><strong>Hyper-Parameters:</strong>
   </li>
 </ul>
+<center>
 
 | **Hyper-Parameters** | **Value** |
 | :------------------: | :-------: |
@@ -50,10 +51,14 @@
 |  Momentum (for SGD)  |    0.9    |
 |     Weight Decay     |   5e-4    |
 
+</center>
+
 <ul>
-  <li>Learning Rate:
+  <li><strong>Learning Rate:</strong>
   </li>
 </ul>
+
+<center>
 
 | **Epoch** | **Value** |
 | :-------: | :-------: |
@@ -64,4 +69,55 @@
 |  [61,90]  |   1e-5    |
 | [91,100]  |   1e-6    |
 
-# Face Verification
+</center>
+
+## Face Verification
+
+<ul>
+  <li><strong>Similarity Metrics:</strong>
+    <ul>
+      <li>Cosine Similarity</li>
+    </ul>
+  </li>
+</ul>
+
+<center>
+
+$ Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \times \| x_2 \|} $
+
+</center>
+
+<ul>
+  <li><strong>Face Verification Flow Chart:</strong>
+  </li>
+</ul>
+
+<center>
+
+![Face Verification Flow Chart](./plots/face_verification.png)
+
+</center>
+
+## Dataset
+
+### Classification Dataset
+
+<center>
+
+|            | **Num. of Categories** | **Num. of Data per Category** |
+| :--------: | :--------------------: | :---------------------------: |
+|  Training  |          1000          |              16               |
+| Validation |          1000          |               4               |
+|    Test    |          1000          |               5               |
+
+</center>
+
+### Validation Dataset
+
+<ul>
+  <li><strong>166800 comparison between two images</strong>
+  <ul>
+      <li>The result of matching two images is in the <em>verification_dev.csv</em></li>
+    </ul>
+  </li>
+</ul>
