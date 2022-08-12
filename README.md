@@ -314,3 +314,13 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
     </ul>
   </li>
 </ul>
+
+## Report
+
+<ul>
+  <li><strong>Link:</strong>
+    <ul>
+      <li><a href="https://github.com/ahedayat/Face-Classification-and-Verification/blob/main/Report.pdf">Persian</a></li>
+    </ul>
+  </li>
+</ul>
