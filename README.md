@@ -2,7 +2,7 @@
 
 ## Face Detection with HAAR Features
 
-<table style="margin-left: auto; margin-right: auto;">
+<table style="margin-left: auto; margin-right: auto;" border=0 align=center>
   <tr>
     <td><strong>Original Image</strong></td>
     <td><strong>Detected Face in the Image</strong></td>
@@ -122,7 +122,7 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
   </li>
 </ul>
 
-<table  style="margin-left: auto; margin-right: auto;">
+<table  style="margin-left: auto; margin-right: auto;" border=0 align=center>
   <tr>
     <td><center> <strong>Number</strong> </center></td>
     <td><center> <strong>Percentage</strong> </center></td>
@@ -145,7 +145,7 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
   </li>
 </ul>
 
-<table  style="margin-left: auto; margin-right: auto;">
+<table  style="margin-left: auto; margin-right: auto;"  border=0 align=center >
   <tr>
     <td><center> <strong>Gray + ResNet-18</strong> </center></td>
     <td><center> <strong>RGB + ResNet-18</strong> </center></td>
@@ -168,7 +168,7 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
   </li>
 </ul>
 
-<table style="margin-left: auto; margin-right: auto;">
+<table style="margin-left: auto; margin-right: auto;" border=0 align=center>
    <tr>
     <td> <img src="./plots/results_verification/rocs.png"  alt='loss function plot for "Gray + ResNNet-18"' width = 600px height = 500px ></td>
   </tr>
@@ -179,7 +179,7 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
   </li>
 </ul>
 
-<table  style="margin-left: auto; margin-right: auto;">
+<table  style="margin-left: auto; margin-right: auto;" border=0 align=center>
     <thead>
         <tr>
             <th>Network</th>
