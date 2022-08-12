@@ -179,7 +179,7 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
   </li>
 </ul>
 
-<table  style="margin-left: auto; margin-right: auto;">
+<table  style="margin-left: auto; margin-right: auto;" border=0 align=center>
     <thead>
         <tr>
             <th>Network</th>
