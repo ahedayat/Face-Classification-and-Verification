@@ -2,7 +2,7 @@
 
 ## Face Detection with HAAR Features
 
-<table style="margin-left: auto; margin-right: auto;" border=0 align=center>
+<table style="margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
   <tr>
     <td><strong>Original Image</strong></td>
     <td><strong>Detected Face in the Image</strong></td>
@@ -143,7 +143,6 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
 
 <center>
 <img src="./plots/face_verification.png"  alt="Face Verification Flow Chart" width = 600px height = 300px >
-
 </center>
 
 ## Dataset
@@ -188,10 +187,10 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
   </li>
 </ul>
 
-<table  style="margin-left: auto; margin-right: auto;" border=0 align=center>
+<table  style="margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
   <tr>
-    <td><center> <strong>Number</strong> </center></td>
-    <td><center> <strong>Percentage</strong> </center></td>
+    <td><strong>Number</strong></td>
+    <td><strong>Percentage</strong></td>
 
    </tr> 
    <tr>
@@ -211,19 +210,17 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
   </li>
 </ul>
 
-<table  style="margin-left: auto; margin-right: auto;"  border=0 align=center >
+<table  style="margin-left: auto; margin-right: auto; text-align: center"  border=0 align=center >
   <tr>
-    <td><center> <strong>Gray + ResNet-18</strong> </center></td>
-    <td><center> <strong>RGB + ResNet-18</strong> </center></td>
-    <td><center> <strong>RGB + ResNet-50</strong> </center></td>
+    <td><strong>Gray + ResNet-18</strong></td>
+    <td><strong>RGB + ResNet-18</strong></td>
+    <td><strong>RGB + ResNet-50</strong></td>
 
-   </tr> 
-   <tr>
+  </tr> 
+  <tr>
     <td> <img src="./plots/results_classification/gray_train_val_losses.png"  alt='loss function plot for "Gray + ResNNet-18"' width = 300px height = 200px ></td>
     <td> <img src="./plots/results_classification/18_train_val_losses.png"  alt='loss function plot for "RGB + ResNNet-18"' width = 300px height = 200px ></td>
     <td> <img src="./plots/results_classification/50_train_val_losses.png"  alt='loss function plot for "RGB + ResNNet-50"' width = 300px height = 200px ></td>
-
-  </td>
   </tr>
 </table>
 
@@ -245,9 +242,9 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
   </li>
 </ul>
 
-<table  style="margin-left: auto; margin-right: auto;" border=0 align=center>
+<table  style="margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
     <thead>
-        <tr>
+        <tr style="text-align: center">
             <th>Network</th>
             <th>Class</th>
             <th>Precision</th>
@@ -260,48 +257,48 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
     <tbody>
         <tr>
             <td rowspan=2>Gray + ResNet-18</td>
-            <td><center> 0 </center></td>
-            <td><center> 0.62 </center></td>
-            <td><center> 0.79 </center></td>
-            <td><center> 0.70 </center></td>
-            <td rowspan=2><center> 0.158 </center></td>
-            <td rowspan=2><center> 66.9% </center></td>
+            <td>0</td>
+            <td>0.62</td>
+            <td>0.79</td>
+            <td>0.70</td>
+            <td rowspan=2>0.158</td>
+            <td rowspan=2>66.9%</td>
         </tr>
         <tr>
-            <td><center> 1 </center></td>
-            <td><center> 0.75 </center></td>
-            <td><center> 0.56 </center></td>
-            <td><center> 0.64 </center></td>
+            <td>1</td>
+            <td>0.75</td>
+            <td>0.56</td>
+            <td>0.64</td>
         </tr>
         <tr>
             <td rowspan=2>RGB + ResNet-18</td>
-            <td><center> 0 </center></td>
-            <td><center> 0.65 </center></td>
-            <td><center> 0.83 </center></td>
-            <td><center> 0.73 </center></td>
-            <td rowspan=2><center> 0.162 </center></td>
-            <td rowspan=2><center> 70.3% </center></td>
+            <td>0</td>
+            <td>0.65</td>
+            <td>0.83</td>
+            <td>0.73</td>
+            <td rowspan=2>0.162</td>
+            <td rowspan=2>70.3%</td>
         </tr>
         <tr>
-            <td><center> 1 </center></td>
-            <td><center> 0.79 </center></td>
-            <td><center> 0.59 </center></td>
-            <td><center> 0.68 </center></td>
+            <td>1</td>
+            <td>0.79</td>
+            <td>0.59</td>
+            <td>0.68</td>
         </tr>
         <tr>
             <td rowspan=2>RGB + ResNet-50</td>
-            <td><center> 0 </center></td>
-            <td><center> 0.64 </center></td>
-            <td><center> 0.85 </center></td>
-            <td><center> 0.73 </center></td>
-            <td rowspan=2><center> 0.124 </center></td>
-            <td rowspan=2><center> 70.2% </center></td>
+            <td>0</td>
+            <td>0.64</td>
+            <td>0.85</td>
+            <td>0.73</td>
+            <td rowspan=2>0.124</td>
+            <td rowspan=2>70.2%</td>
         </tr>
         <tr>
-            <td><center> 1 </center></td>
-            <td><center> 0.81 </center></td>
-            <td><center> 0.56 </center></td>
-            <td><center> 0.66 </center></td>
+            <td>1</td>
+            <td>0.81</td>
+            <td>0.56</td>
+            <td>0.66</td>
         </tr>
     </tbody>
 </table>
