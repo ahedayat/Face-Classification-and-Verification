@@ -43,13 +43,36 @@
 </ul>
 <center>
 
-| **Hyper-Parameters** | **Value** |
-| :------------------: | :-------: |
-|          s           |    64     |
-|          m           |    0.5    |
-|        Epoch         |    100    |
-|  Momentum (for SGD)  |    0.9    |
-|     Weight Decay     |   5e-4    |
+<table border=0 align=center style="text-align: center">
+  <theader>
+    <tr>
+      <th> Hyper-Parameters </th>
+      <th> Value </th>
+    </tr>
+  </theader>
+  <tbody>
+    <tr>
+      <td>s</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>m</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Epoch</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Epoch</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>Epoch</td>
+      <td>5e-4</td>
+    </tr>
+  </tbody>
+</table>
 
 </center>
 
@@ -60,14 +83,40 @@
 
 <center>
 
-| **Epoch** | **Value** |
-| :-------: | :-------: |
-|  [1,20]   |   1e-1    |
-|  [21,30]  |   1e-2    |
-|  [31,40]  |   1e-3    |
-|  [41,60]  |   1e-4    |
-|  [61,90]  |   1e-5    |
-| [91,100]  |   1e-6    |
+<table border=0 align=center  style="text-align: center">
+  <theader>
+    <tr>
+      <th><strong>Epoch</strong></th>
+      <th><strong>Value</strong></th>
+    </tr>
+  </theader>
+  <tbody>
+    <tr>
+      <td>[1,20]</td>
+      <td>1e-1</td>
+    </tr>
+    <tr>
+      <td>[21,30]</td>
+      <td>1e-2</td>
+    </tr>
+    <tr>
+      <td>[31,40]</td>
+      <td>1e-3</td>
+    </tr>
+    <tr>
+      <td>[41,60]</td>
+      <td>1e-4</td>
+    </tr>
+    <tr>
+      <td>[61,90]</td>
+      <td>1e-5</td>
+    </tr>
+    <tr>
+      <td>[91,100]</td>
+      <td>1e-6</td>
+    </tr>
+  </tbody>
+</table>
 
 </center>
 
@@ -101,15 +150,32 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
 
 ### Classification Dataset
 
-<center>
-
-|            | **Num. of Categories** | **Num. of Data per Category** |
-| :--------: | :--------------------: | :---------------------------: |
-|  Training  |          1000          |              16               |
-| Validation |          1000          |               4               |
-|    Test    |          1000          |               5               |
-
-</center>
+<table border=0 align=center style="text-align: center">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Num. of Categories</th>
+      <th>Num. of Data per Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Training</td>
+      <td>1000</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td>1000</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Training</td>
+      <td>1000</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Verification Dataset
 
@@ -239,3 +305,15 @@ $( Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \ti
         </tr>
     </tbody>
 </table>
+
+## Pretrained Model
+
+<ul>
+  <li><strong>Link:</strong>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/1dkq3uACMCPLH60go6K0L4e-x1SRVMSUG/view?usp=sharing">Gray + ResNet-18</a></li>
+      <li><a href="https://drive.google.com/file/d/1mvOV2bwzf9aluZzQkmkiRc3WyjlL00AE/view?usp=sharing">RGB + ResNet-18</a></li>
+      <li><a href="https://drive.google.com/file/d/15Yst4PIUjTtvlcPPhf8bsrC5PmQocPSX/view?usp=sharing">RGB + ResNet-50</a></li>
+    </ul>
+  </li>
+</ul>
