@@ -2,12 +2,12 @@
 
 ## Face Detection with HAAR Features
 
-<table>
+<table style="margin-left: auto; margin-right: auto;">
   <tr>
     <td><strong>Original Image</strong></td>
     <td><strong>Detected Face in the Image</strong></td>
     <td><strong>Cropped Face</strong></td>
-    <td><strong>Fandmarked Face</strong></td>
+    <td><strong>Landmarked Face</strong></td>
 
    </tr> 
    <tr>
@@ -23,7 +23,7 @@
 ## Face Classification
 
 <ul>
-  <li><strong>Network:</strong>
+  <li><strong>Input + Backbone Network:</strong>
     <ul>
       <li>Gray + ResNet-18</li>
       <li>RGB + ResNet-18</li>
@@ -111,12 +111,131 @@ $ Cosine-Similarity (x_1, x_2)=\frac{ \vec{x_1} \cdot \vec{x_2} }{\| x_1 \| \tim
 
 </center>
 
-### Validation Dataset
+### Verification Dataset
 
 <ul>
   <li><strong>166800 comparison between two images</strong>
   <ul>
       <li>The result of matching two images is in the <em>verification_dev.csv</em></li>
     </ul>
+    <li>Distribution of Labels in Verification Dataset:</li>
   </li>
 </ul>
+
+<table  style="margin-left: auto; margin-right: auto;">
+  <tr>
+    <td><center> <strong>Number</strong> </center></td>
+    <td><center> <strong>Percentage</strong> </center></td>
+
+   </tr> 
+   <tr>
+    <td> <img src="./plots/EDA/verification_match_result_eng.png"  alt="Number of correctness or incorrectness of matching of two images in validation dataset." width = 300px height = 300px ></td>
+    <td> <img src="./plots/EDA/verification_match_result_percent_eng.png"  alt="Ratio of correctness or incorrectness of matching of two images in validation dataset." width = 300px height = 300px ></td>
+
+  </td>
+  </tr>
+</table>
+
+## Results
+
+### Classification Results
+
+<ul>
+  <li><strong>Classification Loss Function for Different Networks</strong>
+  </li>
+</ul>
+
+<table  style="margin-left: auto; margin-right: auto;">
+  <tr>
+    <td><center> <strong>Gray + ResNet-18</strong> </center></td>
+    <td><center> <strong>RGB + ResNet-18</strong> </center></td>
+    <td><center> <strong>RGB + ResNet-50</strong> </center></td>
+
+   </tr> 
+   <tr>
+    <td> <img src="./plots/results_classification/gray_train_val_losses.png"  alt='loss function plot for "Gray + ResNNet-18"' width = 300px height = 200px ></td>
+    <td> <img src="./plots/results_classification/18_train_val_losses.png"  alt='loss function plot for "RGB + ResNNet-18"' width = 300px height = 200px ></td>
+    <td> <img src="./plots/results_classification/50_train_val_losses.png"  alt='loss function plot for "RGB + ResNNet-50"' width = 300px height = 200px ></td>
+
+  </td>
+  </tr>
+</table>
+
+### Verificaiton Results
+
+<ul>
+  <li><strong>Verification ROC Curve</strong>
+  </li>
+</ul>
+
+<table style="margin-left: auto; margin-right: auto;">
+   <tr>
+    <td> <img src="./plots/results_verification/rocs.png"  alt='loss function plot for "Gray + ResNNet-18"' width = 600px height = 500px ></td>
+  </tr>
+</table>
+
+<ul>
+  <li><strong>Other Metrics</strong>
+  </li>
+</ul>
+
+<table  style="margin-left: auto; margin-right: auto;">
+    <thead>
+        <tr>
+            <th>Network</th>
+            <th>Class</th>
+            <th>Precision</th>
+            <th>Recall</th>
+            <th>F1-Score</th>
+            <th>Threshold</th>
+            <th>Accuracy</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>Gray + ResNet-18</td>
+            <td><center> 0 </center></td>
+            <td><center> 0.62 </center></td>
+            <td><center> 0.79 </center></td>
+            <td><center> 0.70 </center></td>
+            <td rowspan=2><center> 0.158 </center></td>
+            <td rowspan=2><center> 66.9% </center></td>
+        </tr>
+        <tr>
+            <td><center> 1 </center></td>
+            <td><center> 0.75 </center></td>
+            <td><center> 0.56 </center></td>
+            <td><center> 0.64 </center></td>
+        </tr>
+        <tr>
+            <td rowspan=2>RGB + ResNet-18</td>
+            <td><center> 0 </center></td>
+            <td><center> 0.65 </center></td>
+            <td><center> 0.83 </center></td>
+            <td><center> 0.73 </center></td>
+            <td rowspan=2><center> 0.162 </center></td>
+            <td rowspan=2><center> 70.3% </center></td>
+        </tr>
+        <tr>
+            <td><center> 1 </center></td>
+            <td><center> 0.79 </center></td>
+            <td><center> 0.59 </center></td>
+            <td><center> 0.68 </center></td>
+        </tr>
+        <tr>
+            <td rowspan=2>RGB + ResNet-50</td>
+            <td><center> 0 </center></td>
+            <td><center> 0.64 </center></td>
+            <td><center> 0.85 </center></td>
+            <td><center> 0.73 </center></td>
+            <td rowspan=2><center> 0.124 </center></td>
+            <td rowspan=2><center> 70.2% </center></td>
+        </tr>
+        <tr>
+            <td><center> 1 </center></td>
+            <td><center> 0.81 </center></td>
+            <td><center> 0.56 </center></td>
+            <td><center> 0.66 </center></td>
+        </tr>
+    </tbody>
+</table>
